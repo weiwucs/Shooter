@@ -3,4 +3,29 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="top_app_bar_label_title">Top app bar</string>
+    <string name="app_bar_menu_share">Share</string>
+    <string name="app_bar_menu_search">Search</string>
+    <string name="app_bar_menu_bookmark">Bookmark</string>
+
+    <string name="text_headline_6">Headline 6</string>
+    <string name="text_body_2">Body 2</string>
+    <string name="text_button">Button</string>
+    <string name="text_overline">Overline</string>
+
+    <string name="text_appearance_h1_label">H1</string>
+    <string name="text_appearance_h2_label">H2</string>
+    <string name="text_appearance_h3_label">H3</string>
+    <string name="text_appearance_h4_label">H4</string>
+    <string name="text_appearance_h5_label">H5</string>
+    <string name="text_appearance_h6_label">H6</string>
+    <string name="text_appearance_subtitle_1_label">Subtitle 1</string>
+    <string name="text_appearance_subtitle_2_label">Subtitle 2</string>
+    <string name="text_appearance_body_1_label">Body 1</string>
+    <string name="text_appearance_body_2_label">Body 2</string>
+    <string name="text_appearance_button_label">Button</string>
+    <string name="text_appearance_caption_label">Caption</string>
+    <string name="text_appearance_overline_label">Overline</string>
 </resources>
