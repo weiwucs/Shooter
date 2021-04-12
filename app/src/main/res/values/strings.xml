@@ -9,6 +9,8 @@
     <string name="app_bar_menu_share">Share</string>
     <string name="app_bar_menu_search">Search</string>
     <string name="app_bar_menu_bookmark">Bookmark</string>
+    <string name="app_bar_menu_save">Save</string>
+    <string name="app_bar_menu_more">More</string>
 
     <string name="text_headline_6">Headline 6</string>
     <string name="text_body_2">Body 2</string>

@@ -8,4 +8,7 @@
     <dimen name="keyline_2">8dp</dimen>
     <dimen name="keyline_4">16dp</dimen>
     <dimen name="keyline_5">24dp</dimen>
+
+    <dimen name="title_height">44dp</dimen>
+    <dimen name="status_bar_height">16dp</dimen>
 </resources>
