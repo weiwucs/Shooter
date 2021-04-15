@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        View decor_view = getWindow().getDecorView();
+        decor_view.setFitsSystemWindows(true);
 
         if(getSupportActionBar() != null){
             getSupportActionBar().hide(); //it is useful to hide the action bar.

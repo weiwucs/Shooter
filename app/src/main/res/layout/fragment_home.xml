@@ -42,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
+        android:paddingBottom="?attr/actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -73,6 +74,7 @@
             </com.youth.banner.Banner>
 
             <TableLayout
+                android:layout_marginTop="16dp"
                 android:id="@+id/table_layout"
                 android:layout_width="match_parent"
                 android:layout_height="192dp"
@@ -80,10 +82,12 @@
 
             </TableLayout>
 
+            <!-- layout_height = wrap_content / 0dp diff-->
             <com.jcodecraeer.xrecyclerview.XRecyclerView
                 android:id="@+id/recyclerview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/table_layout">

@@ -1,5 +1,6 @@
 package com.weiwu.shooter.ui.home;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -43,6 +44,7 @@ public class HomeFragment extends Fragment {
     private int times = 0;
     final int itemLimit = 5;
 
+    @SuppressLint("ResourceAsColor")
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 //        homeViewModel =
@@ -109,8 +111,9 @@ public class HomeFragment extends Fragment {
         recyclerViewCardAdapter = new RecyclerViewCardAdapter((ArrayList<CardBean>) items);
         xRecyclerView.setAdapter(recyclerViewCardAdapter);
 
-        xRecyclerView.getDefaultFootView().setLoadingHint("自定义加载中提示");
-        xRecyclerView.getDefaultFootView().setNoMoreHint("自定义加载完毕提示");
+//        xRecyclerView.getDefaultFootView().setLoadingHint("加载中");
+//        xRecyclerView.getDefaultFootView().setNoMoreHint("加载完毕");
+//        xRecyclerView.getDefaultFootView().setBackgroundColor(R.color.trans);
 
         // When the item number of the screen number is list.size-2,we call the onLoadMore
         xRecyclerView.setLimitNumberToCallLoadMore(2);

@@ -9,11 +9,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="ivory">#fffff0</color>
-    <color name="lightyellow">#ffffe0</color>
+    <color name="light_yellow">#ffffe0</color>
     <color name="yellow">#ffff00</color>
     <color name="snow">#fffafa</color>
-    <color name="floralwhite">#fffaf0</color>
-    <color name="lemonchiffon">#fffacd</color>
+    <color name="floral_white">#fffaf0</color>
+    <color name="lemon_chiffon">#fffacd</color>
     <color name="cornsilk">#fff8dc</color>
     <color name="seaShell">#fff5ee</color>
     <color name="lavenderblush">#fff0f5</color>
@@ -152,4 +152,6 @@
     <color name="mediumblue">#0000cd</color>
     <color name="darkblue">#00008b</color>
     <color name="navy">#000080</color>
+    <color name="color_view">#dedede</color>
+    <color name="light_blue">#40c4ff</color>
 </resources>
