@@ -19,8 +19,8 @@
   + CardView 内容展示
   + XRecyclierView 实现列表展示，上拉更新内容
 
-+ Tab浏览页面
-
++ Tab浏览页面 
+ 
   + 利用CollapsingToolbarLayout实现可折叠的ToolBar
   + 利用MagicIndicator和ViewPager实现自定义的Tab展示
 
