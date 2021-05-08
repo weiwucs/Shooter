@@ -1,5 +1,6 @@
 package com.weiwu.shooter.ui.dashboard;
 
+import android.content.ClipData;
 import android.content.Context;
 import android.graphics.Color;
 import android.nfc.Tag;
@@ -10,18 +11,22 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.appbar.AppBarLayout;
 import com.scwang.smart.refresh.layout.SmartRefreshLayout;
+import com.scwang.smart.refresh.layout.api.RefreshLayout;
 import com.scwang.smart.refresh.layout.listener.OnRefreshListener;
 import com.weiwu.shooter.R;
 
@@ -49,6 +54,8 @@ public class DashboardFragment extends Fragment {
     private CommonNavigator commonNavigator;
     private ViewPager viewPager;
 
+    private AppBarLayout appBarLayout;
+    private Toolbar toolbar;
 
     private String[] titles = new String[]{"动态", "文章","更多"};
     private List<String> title_list = Arrays.asList(titles);
@@ -66,11 +73,40 @@ public class DashboardFragment extends Fragment {
             DynamicFragment dynamicFragment = DynamicFragment.newInstance(title_list.get(i));
             fragmentList.add(dynamicFragment);
         }
-        
 
-//        SmartRefreshLayout smartRefreshLayout = root.findViewById(R.id.refreshLayout);
-//        smartRefreshLayout.setEnableLoadMore(false);
-//        smartRefreshLayout.setOnRefreshListener((OnRefreshListener) getActivity());
+        appBarLayout = root.findViewById(R.id.appbar_layout);
+        toolbar = root.findViewById(R.id.toolbar);
+//        mIvMenu = root.findViewById(R.id.top_app_bar_menu_more);
+
+//        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+//            @Override
+//            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+//                int scrollRangle = appBarLayout.getTotalScrollRange();
+//
+//                if(verticalOffset < -10){
+//                    toolbar.setNavigationIcon(R.drawable.ic_baseline_black_arrow_back_ios_24);
+//
+//                }else{
+//                    toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_ios_24);
+//
+//                }
+//
+//                int mAlpha = (int) Math.abs(255f / scrollRangle * verticalOffset);
+//                //顶部title渐变效果
+//                toolbar.setBackgroundColor(Color.argb(mAlpha, 255, 255, 255));
+//            }
+//        });
+
+        SmartRefreshLayout smartRefreshLayout = root.findViewById(R.id.refreshLayout);
+        smartRefreshLayout.setEnableLoadMore(false);
+        smartRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
+            @Override
+            public void onRefresh(@NonNull RefreshLayout refreshLayout) {
+
+            }
+        });
+
+
 
         viewPager = root.findViewById(R.id.viewPager);
 //        viewPager.setAdapter(new TextViewPagerAdapter(title_list));

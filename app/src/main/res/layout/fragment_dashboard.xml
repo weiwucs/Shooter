@@ -61,8 +61,6 @@
                                 android:background="@color/trans"
                                 android:layout_height="?attr/actionBarSize"
                                 android:layout_marginTop="@dimen/status_bar_height"
-                                android:visibility="visible"
-                                style="@style/Theme.Shooter"
                                 app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
                                 app:layout_collapseMode="pin"
                                 app:menu="@menu/app_bar_collapsing"/>
@@ -96,19 +94,12 @@
 
                     </com.google.android.material.appbar.AppBarLayout>
 
-                    <androidx.core.widget.NestedScrollView
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-                        <androidx.viewpager.widget.ViewPager
-                            android:id="@+id/viewPager"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@color/white"
-                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-                    </androidx.core.widget.NestedScrollView>
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
                 </androidx.coordinatorlayout.widget.CoordinatorLayout>
     </com.scwang.smart.refresh.layout.SmartRefreshLayout>
